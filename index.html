@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html id="html" >
+
+    <head>
+        <title>CLAVIER's Camille CV & Portfolio</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="shortcut icon" href="./img/LOGO.png" />
+
+        <link rel="stylesheet" href="./styles/style.css" />
+
+    </head>
+
+    <body>
+        <nav>
+            <img id="logo" src="./img/LOGO.png" onclick="jumpTo('beginning')">
+            <div class="bouton" onclick="jumpTo('informations')">
+                <h2>
+                    Informations
+                </h2>
+            </div>
+            <div class="bouton" onclick="jumpTo('parcours')">
+                <h2>
+                    Parcours
+                </h2>
+            </div>
+            <div class="bouton" onclick="jumpTo('competences')">
+                <h2>
+                    Compétences
+                </h2>
+            </div>
+            <div class="bouton" onclick="jumpTo('portfolio')">
+                <h2>
+                    Portfolio
+                </h2>
+            </div>
+            <div class="bouton" onclick="jumpTo('contact')">
+                <h2>
+                    Contact
+                </h2>
+            </div>
+        </nav>
+        <div class="section first"> 
+            <div id="textBox">
+                <h3>
+                    Actuellement étudiante en 4eme année d'école d'ingénieur, j'aimerais perfectionner mes compétences dans le domaine de la programmation pour pouvoir devenir, je l'espère, développeuse.
+                </h3>
+            </div>
+        </div>
+        <div id="informations" class="section toBottom" onmouseenter="changeState('imageInformations')" onmouseleave="changeState('imageInformations')"> 
+            <div class="column small">
+                <div id="imageInformations" class="imageContainer"></div>
+            </div>
+            <div class="column big">
+                <h1 class="right">Informations<br>personnelles</h1>
+                <img class="iconePlus" src="./img/PLUS_BLACK.png" onclick="goTo('./src/informations_persos.html')">
+            </div>
+        </div>
+        <div id="parcours" class="section black" onmouseenter="addAnimation('steps')" onmouseleave="removeAnimation('steps')"> 
+            <div class="column big">
+                <h1 class="white">Mon<br>parcours</h1>
+                <img class="iconePlus" src="./img/PLUS_BLUE.png" onclick="goTo('./src/parcours.html')">
+            </div>
+            <div class="column small">
+                <lottie-player  id="steps" class="animation" src="https://lottie.host/99215f5d-8055-4566-9aa0-1b8f852f12e1/8L6WI10rXk.json" background="transparent" speed="1.5" loop></lottie-player>
+            </div>
+        </div>
+        <div id="competences" class="section" onmouseenter="changeState('imageCompetences')" onmouseleave="changeState('imageCompetences')"> 
+            <div class="column small">
+                <div id="imageCompetences" class="imageContainer"></div>
+            </div>
+            <div class="column big">
+                <h1 class="right">Mes<br>Competences</h1>
+                <img class="iconePlus" src="./img/PLUS_BLACK.png"  onclick="goTo('./src/competences.html')">
+            </div>
+        </div>
+        <div id="portfolio" class="section black" onmouseenter="addAnimation('design')" onmouseleave="removeAnimation('design')"> 
+            <div class="column big">
+                <h1 class="white">Mon<br>portfolio</h1>
+                <img class="iconePlus" src="./img/PLUS_YELLOW.png"  onclick="goTo('./src/Portfolio.html')">
+            </div>
+            <div class="column small">
+                <lottie-player  id="design" class="animation" src="https://lottie.host/52449c86-71a2-4229-87d8-1c6a23c60c21/v0rwfJYWGd.json" background="transparent" speed="1" loop></lottie-player>
+            </div>
+        </div>
+        <div  id="contact" class="section contact"> 
+            <div id="titleContact">
+                <div id="containerIcones">
+                    <img class="icone" src="./img/LINKEDIN.png" onclick="goTo('linkedin')">
+                    <img class="icone" src="./img/TELEPHONE.png" onclick="alert('Mon numéro est le suivant : +33 6 44 02 94 82');">
+                    <img class="icone" src="./img/MAIL.png" onclick="alert('Mon adresse mail est la suivante : camille.clavier.braun@gmail.com');">
+                </div>
+                <h1 class="contact">Me contacter</h1>
+            </div>
+            <div id="inputsMail">
+                <input type="email" id="mailSender" name="mailSender" placeholder="Email">
+                <input type="text" id="nameSurname" name="nameSurname" placeholder="Nom & Prénom">
+                <textarea id="bodyMail" placeholder="Votre message ici ..." row="10" >
+
+                </textarea>
+                <div class="bouton send" onclick="sendMail()">
+                    <h2>Envoyer</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</html>
