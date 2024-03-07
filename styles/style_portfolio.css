@@ -15,7 +15,7 @@
 
 .card{
     height : 90%;;
-    width :60vh;
+    width :70vh;
     background-color: #ffa800;
     box-shadow: 10px 10px 0px 0px #000000;
     transition: 0.25s transform,0.25s box-shadow,0.25s background-image;
@@ -38,8 +38,24 @@
     background-image: url('../img/AGENDA_BERCAIL.jpg');
 }
 
+.card.gala{
+    background-image: url('../img/GALA.png');
+}
+
+.card.chingu{
+    background-image: url('../img/THUMBNAIL.png');
+}
+
+.card.sante{
+    background-image: url('../img/SANTE.png');
+}
+
 .card.ddd{
     background-image: url('../img/DDD_MOCHA.jpg');
+}
+
+.card.mrh{
+    background-image: url('../img/MRH.png');
 }
 
 .card.baniere{
@@ -54,7 +70,8 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
-    height:40vh;
+    height: 50vh;
+    margin-bottom: 2vh;
 }
 
 .card.invisibleImage{

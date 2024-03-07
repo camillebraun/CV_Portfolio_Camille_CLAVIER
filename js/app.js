@@ -72,6 +72,15 @@ function goToLink(link){
     else if(link=='sv'){
         window.open('https://www.instagram.com/seconde_vie_ihh/?hl=en',"_self");
     }
+    else if(link=='mrh'){
+        window.open('https://www.acommeassure.com/souscrire/assurance-habitation-express/');
+    }
+    else if(link=='chingu'){
+        window.open('https://www.behance.net/gallery/186068319/Chingu-Mobile-Website-Renewal-Design');
+    }
+    else if(link=='gala'){
+        window.open('https://gala.enib.net/');
+    }
     else if(link=='agenda'){
         window.open('https://lebercailsaintmalo.com/agenda-culturel-evenements');
     }
@@ -133,7 +142,7 @@ var intervalId = window.setInterval(function(){
     }
   }, 100);
 
-var liste_diapo=[document.getElementById("mocha"),document.getElementById("asvp"),document.getElementById("baril"),document.getElementById("rdv"),document.getElementById("marche")];
+var liste_diapo=[document.getElementById("acasante"),document.getElementById("acamrh"),document.getElementById("mocha"),document.getElementById("asvp"),document.getElementById("baril"),document.getElementById("rdv"),document.getElementById("marche")];
 var index=0
 
 function next_diapo(sens){
