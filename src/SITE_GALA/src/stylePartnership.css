@@ -1,0 +1,24 @@
+body{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    overflow: hidden;
+}
+
+#return{
+    width:10vh;
+    height:10vh;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/3415/3415823.png");
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#image{
+    width:100vw;
+    height:100vh;
+    background-image: url("../img/PARTENAIRES.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

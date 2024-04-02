@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html id="html" >
+
+    <head>
+        <title>GALA ENIB</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="./img/LOGO.PNG" />
+
+        <link rel="stylesheet" href="./src/style.css" />
+
+    </head>
+
+    <body>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <div class="smooth">
+            <div class="header">
+                <ul>
+                    <li><a href="#host">Accueil</a></li>
+                    <li><a href="#infos">Informations<br>pratiques</a></li>
+                    <li><a href="#ticket">Billetterie</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#drinks">Boisson</a></li>
+                    <li><a href="#footer">A propos <br>de nous</a></li>
+                </ul>
+            </div>
+            <section id="host" class="black">
+                <video autoplay muted id="myVideo">
+                    <source src="./img/Host_Page_GALA.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section id="infos" class="yellow">
+                <div id="containerInfos">
+                    <div id="dateInfos">Le 25/03/2023</div>
+                    <div id="containerCardsInfos">
+                        <div id="cardInfos1" class="cardInfos">
+                            <div class="titreInfos">Remise des diplômes</div>
+                            <div class="hourInfos">14h</div>
+                            <div class="lieuInfos">Multiplexe Liberté<br>10 Av. Georges Clemenceau<br>29200 Brest</div>
+                        </div>
+                        <div id="cardInfos2" class="cardInfos">
+                            <div class="titreInfos">Repas</div>
+                            <div class="hourInfos">19h</div>
+                            <div class="lieuInfos">Espace Culturel Keraudy<br>Rue du Stade<br>29217 Plougonvelin</div>
+                        </div>
+                        <div id="cardInfos3" class="cardInfos">
+                            <div class="titreInfos">Soirée de Gala</div>
+                            <div class="hourInfos">21h à 3h</div>
+                            <div class="lieuInfos">Espace Culturel Keraudy <br>Rue du Stade<br>29217 Plougonvelin</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="ticket" class="black">
+                <h2 class="bouton" onclick="goTo('https://www.helloasso.com/associations/nuit-de-l-enib/evenements/gala-bal-a-venise?_ga=2.80997908.2085110930.1675172274-1264010386.1667843893&_gl=1%2a10nhgtx%2a_ga%2aMTI2NDAxMDM4Ni4xNjY3ODQzODkz%2a_ga_TKC826G3G2%2aMTY3NTE3MjI3My4xOS4xLjE2NzUxNzUxNjQuMC4wLjA&fbclid=IwAR2WP7Rcc58Hn2399nYBAhe9MiVz_matg2gLalc9fTn2RpVjThZHbYWUt6g')"">Billetterie</h2>
+            </section>
+            <section id="menu" class="yellow">
+                <div id="imgMenu"></div>
+            </section>
+            <section id="drinks" class="black">
+                <div class="align-line">
+                    <div class="last" onclick="nextPage(1)"></div>
+                    <div id="containerDrinks">
+                        <div class="leftDrinks parent">
+                            <div class="bottle"></div>
+                            <div class="circleDrink beige"></div>
+                        </div>
+                        <div class="rightDrinks">
+                            <div class="nomDrink">Coca-Cola</div>
+                            <div class="prixDrink">1€ la cannette</div>
+                            <div class="descriptionDrink"></div>
+                        </div>
+                    </div>
+                    <div class="next" onclick="nextPage(-1)"></div>
+                </div>
+                <div id="headerDrinks">
+                    <div id="categoryDrink0" class="buttonDrink active" onclick="changeCategoryDrink(0)">Softs</div>
+                    <div class="spliterDrink">|</div>
+                    <div id="categoryDrink1" class="buttonDrink" onclick="changeCategoryDrink(1)">Champagne</div>
+                    <div class="spliterDrink">|</div>
+                    <div id="categoryDrink2" class="buttonDrink" onclick="changeCategoryDrink(2)">Bières</div>
+                </div>
+            </section>
+            <section id="footer" class="yellow">
+                <h2 class="bouton" onclick="goTo('./pages/team.html')">Notre équipe</h2>
+                <h2 class="bouton" onclick="goTo('./pages/partnership.html')">Nos partenaires</h2>
+                <h2 class="bouton" onclick="goTo('./pages/videoRevelation.html')">Bande-annonce</h2>
+            </section>
+        </div>
+    </body>
+
+    <script src="./src/app.js"></script>
+</html>
